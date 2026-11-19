@@ -7,41 +7,37 @@
 ## 对话范围与导出说明
 
 - 时间范围：**2026 年 11 月 10 日 21:42:33.172 至 11 月 19 日 21:41:42.984，北京时间（UTC+08:00）**。
-- 截止消息：[M0113，本次导出和上传请求](conversations/2026-11-19.md#m0113)。此次导出任务后续的执行更新和完成答复不包含在本次快照中。
-- 共 **113 条消息**：用户消息 21 条、助手回答 15 条、助手过程更新 73 条、助手交互提问 4 条。按日期分为 5 个 Markdown 文件，各条消息有连续编号和时间。
+- 截止消息：[M0113，首次导出和上传请求](conversations/full-conversation.md#m0113)。归档范围截至首次导出请求；之后的执行更新和本次合并请求不在该快照内。
+- 共 **113 条消息**：用户消息 21 条、助手回答 15 条、助手过程更新 73 条、助手交互提问 4 条。连续保存在 1 个 Markdown 文件中，不按日期分组；各条消息保留连续编号和时间。
 - 来自这同一段对话的两份连续历史记录，按日志记录时间排序，并用消息标识核对去重。时间使用消息完成记录时间，可能与界面显示的发送时间略有差别。
 - 双方正文保留原文。交互表单回复仅将传输包装转换成可读的“交互问题／用户回答”，问题与答案文字不改写；不把后续纠正倒填到早期回答中，也不为未完成的回答补写内容。
 - 仅归档双方可见的文字消息和交互提问，不包含系统提示、内部推理或工具执行日志。历史回答中的本地文件链接与客户端标记保留原样。
 
-### 按日期阅读及首尾核对
+### 完整对话与首尾核对
 
-表中首尾文字为**消息开头的摘录**，点击编号可查看该条完整原文。时间均为北京时间，同一行省略重复日期。
+[打开完整对话 Markdown](conversations/full-conversation.md)。此前五份文件已合并，113 条消息的顺序、编号、时间和正文保持一致。以下为首尾消息开头的摘录，点击编号可查看完整原文。
 
 | 对话文件 | 条数与编号 | 第一条消息 | 最后一条消息 |
 |---|---|---|---|
-| [2026-11-10](conversations/2026-11-10.md) | 9，M0001—M0009 | 21:42:33.172，用户 [M0001](conversations/2026-11-10.md#m0001)：“1、首先，仔细浏览文件夹内的ppt，列出其中非常具体的知识点……” | 22:00:38.259，助手 [M0009](conversations/2026-11-10.md#m0009)：“这个方向值得做，但‘边界格继续细分’本身已有论文和开源实现……” |
-| [2026-11-16](conversations/2026-11-16.md) | 27，M0010—M0036 | 17:42:15.986，用户 [M0010](conversations/2026-11-16.md#m0010)：“帮我调用 paper-deep-reading 这个skill，精读路径下的这几篇论文……” | 21:30:19.633，助手 [M0036](conversations/2026-11-16.md#m0036)：“已按你选择的‘公开 AIS＋公开海区边界’搭建实验，并且实际跑完了一轮预实验……” |
-| [2026-11-17](conversations/2026-11-17.md) | 28，M0037—M0064 | 16:38:29.894，用户 [M0037](conversations/2026-11-17.md#m0037)：“如果比值策略在训练估计收益上就已经落后的话，我觉得有必要新增一版……” | 18:00:00.138，助手 [M0064](conversations/2026-11-17.md#m0064)：“已新增 ratio_upgrade 逐步升级版本，并完成验证、冻结、两遍完整测试和 MATLAB 独立复算……” |
-| [2026-11-18](conversations/2026-11-18.md) | 25，M0065—M0089 | 21:00:32.961，用户 [M0065](conversations/2026-11-18.md#m0065)：“我现在已经按照你的指南.md复现了实验，但是那个matlab独立复现的代码我没看懂……” | 22:48:57.767，助手 [M0089](conversations/2026-11-18.md#m0089)：“已写入：课 程 论 文.docx。全文 34 页，含 13 幅图、6 张表、17 条参考文献……” |
-| [2026-11-19](conversations/2026-11-19.md) | 24，M0090—M0113 | 19:05:02.151，用户 [M0090](conversations/2026-11-19.md#m0090)：“看了一遍课程论文初稿，感觉不够清晰，结果也不够好看。首先摘要里 Monterey Bay 减少了 33.18% 的精判……” | 21:41:42.984，用户 [M0113](conversations/2026-11-19.md#m0113)：“现在请把这个对话按时间导出为 Markdown。……将对话 Markdown 和 README上传到我的github……” |
+| [完整对话](conversations/full-conversation.md) | 113，M0001—M0113 | 2026-11-10 21:42:33.172，用户 [M0001](conversations/full-conversation.md#m0001)：“1、首先，仔细浏览文件夹内的ppt，列出其中非常具体的知识点……” | 2026-11-19 21:41:42.984，用户 [M0113](conversations/full-conversation.md#m0113)：“现在请把这个对话按时间导出为 Markdown。……将对话 Markdown 和 README上传到我的github……” |
 
 历史内容中有初稿判断、之后的补充与修订。特别是 33.18% 的比较对象及简单基线的解释，应结合 11 月 19 日的核对阅读，不能仅截取早期汇报。
 
 ## 如何选题
 
-选题从课程 PPT 开始。最初要求列出具体知识点；随后进一步限定：需要的是**能改变一个技术或方法、并能通过实验测量效果的小切口**，而非只整理概念。原始要求及粒度修正见 [M0001](conversations/2026-11-10.md#m0001)、[M0005—M0006](conversations/2026-11-10.md#m0005)。
+选题从课程 PPT 开始。最初要求列出具体知识点；随后进一步限定：需要的是**能改变一个技术或方法、并能通过实验测量效果的小切口**，而非只整理概念。原始要求及粒度修正见 [M0001](conversations/full-conversation.md#m0001)、[M0005—M0006](conversations/full-conversation.md#m0005)。
 
-最终选择 H3 边界格自适应细分，见[选题决定 M0007](conversations/2026-11-10.md#m0007)。问题背景是：判断船位属于哪个海区时，部分点可以通过格子标签快速判断，落入边界候选格的点还要进行精确的点与多边形判断，简称“精判”。增加细分格子可能减少精判，但也增加存储、准备及查询开销。
+最终选择 H3 边界格自适应细分，见[选题决定 M0007](conversations/full-conversation.md#m0007)。问题背景是：判断船位属于哪个海区时，部分点可以通过格子标签快速判断，落入边界候选格的点还要进行精确的点与多边形判断，简称“精判”。增加细分格子可能减少精判，但也增加存储、准备及查询开销。
 
-文献调研发现，“继续细分边界格”已有研究和实现。进一步收窄的对象是：**哪些边界格值得细分、细分多深、每增加一个格子能少做多少次精判，以及 H3 跨分辨率的几何边界怎样保证正确性。** 技术演进、现有方法与争议的原始说明在 [M0009](conversations/2026-11-10.md#m0009)；4 篇论文与网页资料的精读入口在 [M0015](conversations/2026-11-16.md#m0015)、[M0016](conversations/2026-11-16.md#m0016)、[M0020](conversations/2026-11-16.md#m0020)。
+文献调研发现，“继续细分边界格”已有研究和实现。进一步收窄的对象是：**哪些边界格值得细分、细分多深、每增加一个格子能少做多少次精判，以及 H3 跨分辨率的几何边界怎样保证正确性。** 技术演进、现有方法与争议的原始说明在 [M0009](conversations/full-conversation.md#m0009)；4 篇论文与网页资料的精读入口在 [M0015](conversations/full-conversation.md#m0015)、[M0016](conversations/full-conversation.md#m0016)、[M0020](conversations/full-conversation.md#m0020)。
 
-比较多个改进方向后，用户明确选择“预计减少的精判次数／新增格子数”，并关注相同预算下“集中深分”和“广泛浅分”的取舍，见 [M0025—M0027](conversations/2026-11-16.md#m0025)。这一步把选题转化为可检验的资源分配问题。
+比较多个改进方向后，用户明确选择“预计减少的精判次数／新增格子数”，并关注相同预算下“集中深分”和“广泛浅分”的取舍，见 [M0025—M0027](conversations/full-conversation.md#m0025)。这一步把选题转化为可检验的资源分配问题。
 
 ## 实验怎样逐步形成
 
 ### 第一版：收益与成本的比值排序
 
-实验采用公开 AIS 和公开海区边界，用户的选择保留在 [M0029—M0030](conversations/2026-11-16.md#m0029)。第一版的步骤、公开数据出处、正确性条件、评分、对照组、指标与预实验结果集中在 [M0036](conversations/2026-11-16.md#m0036)。
+实验采用公开 AIS 和公开海区边界，用户的选择保留在 [M0029—M0030](conversations/full-conversation.md#m0029)。第一版的步骤、公开数据出处、正确性条件、评分、对照组、指标与预实验结果集中在 [M0036](conversations/full-conversation.md#m0036)。
 
 第一版 `ratio` 按“预计减少精判次数／净新增终端格子数”排序，每个根格一次选择细分深度；`gain` 直接按预计总收益排序。候选动作需要有不同成本：如果普通六边形全都只细分一级，成本通常同为 6，除以相同成本不会改变收益排序，因此设置一级和两级候选。
 
@@ -49,11 +45,11 @@
 
 ### 第二版：逐步升级与边际评分
 
-用户明确要求新增一版，与一次选择方法作受控比较，见 [M0037](conversations/2026-11-17.md#m0037)。新策略 `ratio_upgrade` 先让一级细分参与竞争；某格被选中后，再按剩余收益和剩余成本决定是否升级两级。普通六边形一级净增 6 格，两级累计净增 48 格，因此一级升两级的新增成本是 42 格，不重复收费。机制、共同候选池与局限见 [M0039—M0040](conversations/2026-11-17.md#m0039)，公式及结果见 [M0064](conversations/2026-11-17.md#m0064)。
+用户明确要求新增一版，与一次选择方法作受控比较，见 [M0037](conversations/full-conversation.md#m0037)。新策略 `ratio_upgrade` 先让一级细分参与竞争；某格被选中后，再按剩余收益和剩余成本决定是否升级两级。普通六边形一级净增 6 格，两级累计净增 48 格，因此一级升两级的新增成本是 42 格，不重复收费。机制、共同候选池与局限见 [M0039—M0040](conversations/full-conversation.md#m0039)，公式及结果见 [M0064](conversations/full-conversation.md#m0064)。
 
 第二版的核心检验是逐步升级能否改善旧比值策略，同时保留 `gain` 等对照，用来判断相对简单方法的竞争力。早期预实验的 `ratio` 对 `gain`、第二版的 `ratio_upgrade` 对 `ratio` 属于不同版本的问题；不能把它们混称为同一项主比较。
 
-第二版使用新的多日划分：2024 年 1 月 4—6 日训练、7 日验证、8—14 日测试。三个海区为 Channel Islands、Monterey Bay、Stellwagen Bank；测试共有 589,552 条点—海区记录，5 个种子，405 个场景，每个场景重复计时 21 次。验证、冻结、测试及重复运行的过程见 [M0040](conversations/2026-11-17.md#m0040)、[M0043](conversations/2026-11-17.md#m0043)、[M0046](conversations/2026-11-17.md#m0046)、[M0054](conversations/2026-11-17.md#m0054)、[M0062—M0064](conversations/2026-11-17.md#m0062)。
+第二版使用新的多日划分：2024 年 1 月 4—6 日训练、7 日验证、8—14 日测试。三个海区为 Channel Islands、Monterey Bay、Stellwagen Bank；测试共有 589,552 条点—海区记录，5 个种子，405 个场景，每个场景重复计时 21 次。验证、冻结、测试及重复运行的过程见 [M0040](conversations/full-conversation.md#m0040)、[M0043](conversations/full-conversation.md#m0043)、[M0046](conversations/full-conversation.md#m0046)、[M0054](conversations/full-conversation.md#m0054)、[M0062—M0064](conversations/full-conversation.md#m0062)。
 
 ### 复现与评价的检查顺序
 
@@ -64,11 +60,11 @@
 5. 固定输入后复跑，核对选格、升级轨迹、标签和计数。耗时以重复计时的中位数、分位数及跨运行变化单独评价。
 6. 使用 MATLAB 从原始记录独立重算汇总，再与 Python 结果核对。这里的 MATLAB 独立复算是评价统计的交叉核验，不表示另写了一套 H3 查询引擎。
 
-用户自己的 PowerShell 复跑与 MATLAB 核对见 [M0065—M0069](conversations/2026-11-18.md#m0065)；与 Codex 前两次运行逐项比较见 [M0070—M0073](conversations/2026-11-18.md#m0070)。对话中的复现命令与本地指南入口在 [M0064](conversations/2026-11-17.md#m0064)，但本次上传的内容为对话和索引，实验程序、数据和结果附件需使用原工作目录中的材料。
+用户自己的 PowerShell 复跑与 MATLAB 核对见 [M0065—M0069](conversations/full-conversation.md#m0065)；与 Codex 前两次运行逐项比较见 [M0070—M0073](conversations/full-conversation.md#m0070)。对话中的复现命令与本地指南入口在 [M0064](conversations/full-conversation.md#m0064)，但本次上传的内容为对话和索引，实验程序、数据和结果附件需使用原工作目录中的材料。
 
 ## 结果应该怎样解释
 
-以下是 11 月 19 日从最新复跑 `test_20261118T085711971041Z` 核对出的结果，完整原始表、耗时口径和来源文件见 [M0093](conversations/2026-11-19.md#m0093)。计数为 5 个种子的均值，因此可以有小数。
+以下是 11 月 19 日从最新复跑 `test_20261118T085711971041Z` 核对出的结果，完整原始表、耗时口径和来源文件见 [M0093](conversations/full-conversation.md#m0093)。计数为 5 个种子的均值，因此可以有小数。
 
 **实际新增 120 格**时，三个海区均应同时报告旧比值策略与简单收益排序，不能只突出最有利的百分比。
 
@@ -82,31 +78,31 @@
 
 而在 **Monterey Bay、两者实际新增 1,920 格**时，`gain` 为 25,244.8 次精判，逐步升级为 25,751.6 次，升级策略多做 **506.8 次（约 2.01%）**，精判优势反转。本次耗时分别为 236.115 ms、233.046 ms，说明精判目标与耗时排名也可能不一致。同一预算上限下，旧 `ratio` 的实际新增格数仅平均 1,899.6，不能把这三种策略全部称为“同增 1,920 格”。
 
-因此，现有证据支持**特定配置下改善旧比值策略；相对简单收益排序的收益依赖配置，尚无稳定优势或稳定查询加速证据**。确定性指标能够复现，不代表绝对运行时间必须相同。为什么保留原定主比较、同时补报简单基线和反例，见[用户质疑 M0094](conversations/2026-11-19.md#m0094)及[完整解释 M0095](conversations/2026-11-19.md#m0095)。
+因此，现有证据支持**特定配置下改善旧比值策略；相对简单收益排序的收益依赖配置，尚无稳定优势或稳定查询加速证据**。确定性指标能够复现，不代表绝对运行时间必须相同。为什么保留原定主比较、同时补报简单基线和反例，见[用户质疑 M0094](conversations/full-conversation.md#m0094)及[完整解释 M0095](conversations/full-conversation.md#m0095)。
 
 ## 关键节点对话索引
 
 | 节点 | 用户提出的问题或决定 | 回答、执行或结果的位置 |
 |---|---|---|
-| 从课件知识点转成可改进的方法 | [M0001 初始要求](conversations/2026-11-10.md#m0001)、[M0005 修正粒度](conversations/2026-11-10.md#m0005) | [M0004 课件梳理](conversations/2026-11-10.md#m0004)、[M0006 八个小切口](conversations/2026-11-10.md#m0006) |
-| 确定 H3 边界格自适应细分 | [M0007 选题](conversations/2026-11-10.md#m0007) | [M0009 技术演进、争议与文献链接](conversations/2026-11-10.md#m0009) |
-| 论文精读与通俗化 | [M0010 本地论文](conversations/2026-11-16.md#m0010)、[M0016 网页与通俗解释](conversations/2026-11-16.md#m0016) | [M0015 四篇论文精读入口](conversations/2026-11-16.md#m0015)、[M0020 综合笔记](conversations/2026-11-16.md#m0020) |
-| 比较创新方向并确定评分问题 | [M0021 创新要求](conversations/2026-11-16.md#m0021)、[M0026 选定收益／成本](conversations/2026-11-16.md#m0026) | [M0025 五个改进方向](conversations/2026-11-16.md#m0025) |
-| 设计完整实验并采用公开数据 | [M0027 实验要求](conversations/2026-11-16.md#m0027)、[M0030 公开数据选择](conversations/2026-11-16.md#m0030) | [M0036 方案、指标、预实验及失败现象](conversations/2026-11-16.md#m0036) |
-| 新增边际升级版本 | [M0037 新版本与复现指南要求](conversations/2026-11-17.md#m0037) | [M0039 机制](conversations/2026-11-17.md#m0039)、[M0040 成本与局限](conversations/2026-11-17.md#m0040) |
-| 验证、冻结后测试 | [M0037 受控比较要求](conversations/2026-11-17.md#m0037) | [M0042 执行顺序](conversations/2026-11-17.md#m0042)、[M0046 冻结](conversations/2026-11-17.md#m0046)、[M0054 首轮结果](conversations/2026-11-17.md#m0054) |
-| 第二遍测试与 MATLAB 评价 | [M0037 可复现要求](conversations/2026-11-17.md#m0037) | [M0062 耗时波动](conversations/2026-11-17.md#m0062)、[M0063 MATLAB 核对](conversations/2026-11-17.md#m0063)、[M0064 结果与复跑命令](conversations/2026-11-17.md#m0064) |
-| 使用用户最新数据进行 MATLAB 复算 | [M0065 MATLAB 请求](conversations/2026-11-18.md#m0065) | [M0069 405 场景复算结果](conversations/2026-11-18.md#m0069) |
-| 与 Codex 前两次运行逐项比较 | [M0070 一致性问题](conversations/2026-11-18.md#m0070) | [M0073 正确性、预算、计数与时间分别判断](conversations/2026-11-18.md#m0073) |
-| 整理课程论文初稿 | [M0074 论文撰写要求](conversations/2026-11-18.md#m0074) | [M0089 初稿完成说明](conversations/2026-11-18.md#m0089) |
-| 从原始表核对三策略及实际用格数 | [M0090 原始结果核查要求](conversations/2026-11-19.md#m0090) | [M0093 三海区 120 格、Monterey Bay 1,920 格及来源文件](conversations/2026-11-19.md#m0093) |
-| 保留主比较，同时解释简单基线与反例 | [M0094 对 33.18% 表述的质疑](conversations/2026-11-19.md#m0094) | [M0095 保留理由、反转结果与摘要建议](conversations/2026-11-19.md#m0095) |
-| 修订中英文摘要、讨论与结论 | [M0096 修订要求](conversations/2026-11-19.md#m0096) | [M0105 修改前后对照入口及正文位置](conversations/2026-11-19.md#m0105) |
-| 按学校格式修订并补 GitHub 链接 | [M0106 格式、技能及链接要求](conversations/2026-11-19.md#m0106) | [M0112 Word 链接目标与摘要分页核验](conversations/2026-11-19.md#m0112) |
-| 导出协作记录并上传 GitHub | [M0113 本次归档要求](conversations/2026-11-19.md#m0113) | 本 README 与 `conversations/` 下 5 份按日期导出的 Markdown |
+| 从课件知识点转成可改进的方法 | [M0001 初始要求](conversations/full-conversation.md#m0001)、[M0005 修正粒度](conversations/full-conversation.md#m0005) | [M0004 课件梳理](conversations/full-conversation.md#m0004)、[M0006 八个小切口](conversations/full-conversation.md#m0006) |
+| 确定 H3 边界格自适应细分 | [M0007 选题](conversations/full-conversation.md#m0007) | [M0009 技术演进、争议与文献链接](conversations/full-conversation.md#m0009) |
+| 论文精读与通俗化 | [M0010 本地论文](conversations/full-conversation.md#m0010)、[M0016 网页与通俗解释](conversations/full-conversation.md#m0016) | [M0015 四篇论文精读入口](conversations/full-conversation.md#m0015)、[M0020 综合笔记](conversations/full-conversation.md#m0020) |
+| 比较创新方向并确定评分问题 | [M0021 创新要求](conversations/full-conversation.md#m0021)、[M0026 选定收益／成本](conversations/full-conversation.md#m0026) | [M0025 五个改进方向](conversations/full-conversation.md#m0025) |
+| 设计完整实验并采用公开数据 | [M0027 实验要求](conversations/full-conversation.md#m0027)、[M0030 公开数据选择](conversations/full-conversation.md#m0030) | [M0036 方案、指标、预实验及失败现象](conversations/full-conversation.md#m0036) |
+| 新增边际升级版本 | [M0037 新版本与复现指南要求](conversations/full-conversation.md#m0037) | [M0039 机制](conversations/full-conversation.md#m0039)、[M0040 成本与局限](conversations/full-conversation.md#m0040) |
+| 验证、冻结后测试 | [M0037 受控比较要求](conversations/full-conversation.md#m0037) | [M0042 执行顺序](conversations/full-conversation.md#m0042)、[M0046 冻结](conversations/full-conversation.md#m0046)、[M0054 首轮结果](conversations/full-conversation.md#m0054) |
+| 第二遍测试与 MATLAB 评价 | [M0037 可复现要求](conversations/full-conversation.md#m0037) | [M0062 耗时波动](conversations/full-conversation.md#m0062)、[M0063 MATLAB 核对](conversations/full-conversation.md#m0063)、[M0064 结果与复跑命令](conversations/full-conversation.md#m0064) |
+| 使用用户最新数据进行 MATLAB 复算 | [M0065 MATLAB 请求](conversations/full-conversation.md#m0065) | [M0069 405 场景复算结果](conversations/full-conversation.md#m0069) |
+| 与 Codex 前两次运行逐项比较 | [M0070 一致性问题](conversations/full-conversation.md#m0070) | [M0073 正确性、预算、计数与时间分别判断](conversations/full-conversation.md#m0073) |
+| 整理课程论文初稿 | [M0074 论文撰写要求](conversations/full-conversation.md#m0074) | [M0089 初稿完成说明](conversations/full-conversation.md#m0089) |
+| 从原始表核对三策略及实际用格数 | [M0090 原始结果核查要求](conversations/full-conversation.md#m0090) | [M0093 三海区 120 格、Monterey Bay 1,920 格及来源文件](conversations/full-conversation.md#m0093) |
+| 保留主比较，同时解释简单基线与反例 | [M0094 对 33.18% 表述的质疑](conversations/full-conversation.md#m0094) | [M0095 保留理由、反转结果与摘要建议](conversations/full-conversation.md#m0095) |
+| 修订中英文摘要、讨论与结论 | [M0096 修订要求](conversations/full-conversation.md#m0096) | [M0105 修改前后对照入口及正文位置](conversations/full-conversation.md#m0105) |
+| 按学校格式修订并补 GitHub 链接 | [M0106 格式、技能及链接要求](conversations/full-conversation.md#m0106) | [M0112 Word 链接目标与摘要分页核验](conversations/full-conversation.md#m0112) |
+| 导出协作记录并上传 GitHub | [M0113 首次归档要求](conversations/full-conversation.md#m0113) | 本 README 与[完整对话 Markdown](conversations/full-conversation.md) |
 
 ## 阅读原文时的附件说明
 
-本次可直接在仓库浏览的是 README 与 5 份对话 Markdown。历史消息中的 `F:/...`、`F:\...` 等路径指向原电脑的论文、脚本、数据、图表或笔记；这些附件不包含在本次归档中，本地链接在 GitHub 页面上无法直接打开。原文中的外部论文、官方文档与项目网址按原样保留，其可用性取决于对应网站。
+本次可直接在仓库浏览的是 README 与合并后的完整对话 Markdown。历史消息中的 `F:/...`、`F:\...` 等路径指向原电脑的论文、脚本、数据、图表或笔记；这些附件不包含在本次归档中，本地链接在 GitHub 页面上无法直接打开。原文中的外部论文、官方文档与项目网址按原样保留，其可用性取决于对应网站。
 
-早期消息所说的“尚未执行”、不同版本的页数及运行结果，均保留当时的陈述；最新一次完成说明位于对应日期靠后的消息。本文的流程与结果摘要是导航说明，应以所链接的双方原始对话及对话指出的结果文件核对证据。
+早期消息所说的“尚未执行”、不同版本的页数及运行结果，均保留当时的陈述；最新一次完成说明位于时间顺序靠后的消息。本文的流程与结果摘要是导航说明，应以所链接的双方原始对话及对话指出的结果文件核对证据。
